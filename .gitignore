@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+app_1/__pycache__/
+app_1/migrations/__pycache__/
+app_2/__pycache__/
+app_2/migrations/__pycache__/
+chat/__pycache__/
+chat/migrations/__pycache__/
+django_basics/__pycache__/
