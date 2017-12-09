@@ -29,16 +29,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'app_1',
-    # 'app_2',
-    'chat',
+    'blog_app',
+
 ]
 
 MIDDLEWARE = [
@@ -69,8 +67,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'django_basics.wsgi.application'
-ASGI_APPLICATION = 'django_basics.asgi.channel_layer'
+WSGI_APPLICATION = 'django_basics.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -117,13 +114,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "asgi_redis.RedisChannelLayer",
-        'CONFIG': {
-            'hosts': [('localhost', 6379)],
-        },
-        "ROUTING": "django_basics.routing.channel_routing",
-    },
-}

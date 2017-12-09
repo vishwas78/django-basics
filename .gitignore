@@ -7,3 +7,5 @@ app_2/migrations/__pycache__/
 chat/__pycache__/
 chat/migrations/__pycache__/
 django_basics/__pycache__/
+blog_app/__pycache__/
+blog_app/migrations/__pycache__/
