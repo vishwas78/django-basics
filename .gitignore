@@ -9,3 +9,5 @@ chat/migrations/__pycache__/
 django_basics/__pycache__/
 blog_app/__pycache__/
 blog_app/migrations/__pycache__/
+users/__pycache__/
+users/migrations/__pycache__/
