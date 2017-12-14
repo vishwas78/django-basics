@@ -5,4 +5,6 @@ from blog_app import models
 class BlogForm(forms.ModelForm):
     class Meta:
         model = models.Blog
-        fields = ['title', 'content', ]
+        fields = ['title', 'content', 'user']
+        exclude = ['user']
+
